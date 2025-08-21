@@ -7,6 +7,7 @@ Cada proyecto tiene un enfoque diferente: desde manejo de LocalStorage, consumo 
 La idea de este portafolio es mostrar mi evolución y habilidades prácticas en el desarrollo frontend y la integración con servicios externos.
 
 En este README pongo a su disposición los proyectos que he desarrollado para que puedan hacer la consulta de los mismos y ver su funcionamiento en tiempo real. A su vez, dentro de este repositorio, encontraran una carpeta que nombré **PortafolioProyectos** en donde encontraran una plantilla de sitio web que elaboré a modo de una presentación sobre mi y mas detalles sobre los proyectos que aquí les he compartido.
+
 ---
 
 ## 📂 Proyectos Incluidos
