@@ -1,0 +1,13 @@
+::selection {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+::placeholder {
+    color: var(--white-color);
+}
+
+body {
+    color: var(--white-color);
+    overflow: hidden;
+}
