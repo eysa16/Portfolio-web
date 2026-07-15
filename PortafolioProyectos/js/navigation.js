@@ -7,6 +7,8 @@ export function initializeNavigation() {
         document.querySelectorAll("header nav a");
 
     const logoLink = document.querySelector(".logo");
+    const sectionButtons =
+    document.querySelectorAll("[data-section-index]");
 
     if (navigationLinks.length === 0 || !logoLink) {
         return;
@@ -51,4 +53,29 @@ export function initializeNavigation() {
 
         navigateToSection(homeLink, 0);
     });
+
+    sectionButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const sectionIndex = Number(
+            button.dataset.sectionIndex
+        );
+
+        const navigationLink =
+            navigationLinks[sectionIndex];
+
+        if (
+            Number.isNaN(sectionIndex) ||
+            !navigationLink
+        ) {
+            return;
+        }
+
+        navigateToSection(
+            navigationLink,
+            sectionIndex
+        );
+    });
+});
 }
