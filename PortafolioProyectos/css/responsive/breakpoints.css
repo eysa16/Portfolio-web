@@ -21,6 +21,22 @@
     section {
         padding: 10rem 4% 2rem;
     }
+
+    .services-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .services-container .services-box {
+        min-height: 26rem;
+    }
+
+    .about-description {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        gap: 3rem;
+    }
 }
 
 
@@ -28,18 +44,60 @@
    BREAKPOINT: 810px
    ========================================================= */
 
-@media screen and (max-width: 810px) {
-    .contact-box .field-box {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 /* =========================================================
    BREAKPOINT: 768px
    ========================================================= */
 
 @media screen and (max-width: 768px) {
+
+    .experience-header {
+    gap: 1.5rem;
+    }
+
+    .resume {
+    display: block;
+    }
+
+    .resume-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        max-height: 52rem;
+    }
+
+    .resume-detail.experience .experience-list,
+    .resume-list {
+        max-height: 52rem;
+    }
+
+    .resume-detail.experience .experience-item {
+        padding: 2.2rem;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        max-height: 55rem;
+    }
+
+    .about-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .about-column {
+        gap: 2rem;
+    }
+
+    .about-card {
+        min-height: auto;
+    }
+
+    .experience-header {
+        gap: 1.5rem;
+    }
 
     .home-detail {
     width: 100%;
@@ -90,22 +148,87 @@
         height: 35rem;
     }
 
-    .resume-container,
     .portfolio-container,
     .contact-container {
         grid-template-columns: 1fr;
-    }
-
-    .resume-container {
-        gap: 3rem;
     }
 
     .portfolio-container .portfolio-box:first-child {
         order: 1;
     }
 
+    .portfolio-container > .portfolio-box:first-child {
+        height: auto;
+        max-height: 55rem;
+    }
+
+    .portfolio-box .numb {
+        font-size: 6rem;
+    }
+
     .contact-box .field-box {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill-category-featured {
+        grid-column: auto;
+    }
+
+    .services {
+        display: block;
+    }
+
+    .services-intro {
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        max-height: 65rem;
+    }
+
+    .services-container .services-box {
+        min-height: auto;
+    }
+
+    .education-container {
+        grid-template-columns: 1fr;
+        max-height: 54rem;
+    }
+
+    .education-card-wide {
+        grid-column: auto;
+    }
+
+    .education-card {
+        min-height: auto;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-information {
+        justify-content: flex-start;
+    }
+
+    .contact-form-box {
+        min-height: 58rem;
+    }
+
+    .contact-box form {
+        height: auto;
+        min-height: 58rem;
+    }
+
+    .contact-box .field-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 24rem;
     }
 }
 
@@ -115,6 +238,34 @@
    ========================================================= */
 
 @media screen and (max-width: 600px) {
+
+    .skills-container,
+    .resume-detail.experience .experience-list,
+    .resume-list {
+        max-height: 55rem;
+    }
+
+    .resume-detail.experience .experience-list {
+    height: 50rem;
+    padding-right: 0.7rem;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .experience-status {
+        align-self: flex-start;
+    }
+
+    .experience-points li {
+        font-size: 1.4rem;
+    }
+
+    .experience-technologies span {
+        font-size: 1.2rem;
+    }
 
     .home-actions {
     width: 100%;
@@ -137,6 +288,128 @@
 
     .contact-box .field-box {
         grid-template-columns: 1fr;
+    }
+
+    .portfolio-container > .portfolio-box:first-child {
+        max-height: 58rem;
+    }
+
+    .project-highlights li {
+        font-size: 1.4rem;
+    }
+
+    .skills-container {
+        height: 50rem;
+        padding-right: 0.7rem;
+    }
+
+    .skill-category {
+        padding: 1.8rem;
+    }
+
+    .skill-category-header {
+        gap: 1rem;
+    }
+
+    .skill-category-header > i {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2.4rem;
+    }
+
+    .skill-category-header h3 {
+        font-size: 1.8rem;
+    }
+
+    .skill-item span {
+        font-size: 1.2rem;
+    }
+
+    .services-container {
+        max-height: 68rem;
+        padding-right: 0.7rem;
+    }
+
+    .services-container .services-box {
+        padding: 2.2rem;
+    }
+
+    .services-box h3 {
+        font-size: 2rem;
+    }
+
+    .services-box p {
+        font-size: 1.4rem;
+    }
+
+    .education-container {
+        max-height: 56rem;
+        padding-right: 0.7rem;
+    }
+
+    .education-card {
+        padding: 2rem;
+    }
+
+    .education-card-header {
+        flex-wrap: wrap;
+    }
+
+    .education-status {
+        margin-left: 6.5rem;
+    }
+
+    .education-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        max-height: 58rem;
+        padding-right: 0.7rem;
+    }
+
+    .about-card {
+        padding: 2rem;
+    }
+
+    .about-card-header {
+        gap: 1rem;
+    }
+
+    .about-icon {
+        width: 4.3rem;
+        height: 4.3rem;
+        font-size: 2.4rem;
+    }
+
+    .about-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-values {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box h2 {
+        font-size: 3.5rem;
+    }
+
+    .contact-box form {
+        min-height: auto;
+        padding: 2.5rem 2rem;
+    }
+
+    .contact-box .field-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .contact-box .field-box textarea {
+        min-height: 22rem;
+    }
+
+    .contact-detail .detail p:last-child {
+        font-size: 1.35rem;
     }
 }
 
@@ -165,6 +438,10 @@
         text-align: center;
     }
 
+    .resume-detail.about .resume-item {
+        text-align: center;
+    }
+
     .home-detail .btn-sci {
     flex-direction: column;
     }
@@ -179,5 +456,18 @@
 
     .contact-box h2 {
         font-size: 3.5rem;
+    }
+
+    .education-status {
+        margin-left: 0;
+    }
+
+    .education-card-header {
+        flex-direction: column;
+    }
+
+    .education-title,
+    .education-description {
+        text-align: left;
     }
 }
